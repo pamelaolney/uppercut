@@ -1,0 +1,14 @@
+<%= form_for @long_goal do |f| %>
+
+  <%= f.label :goal %>
+  <%= f.text_field :goal %>
+
+  <%= f.label :duedate %>
+  <%= f.date_field :duedate %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.hidden_field(:user_id, :value => @current_user.id) %>
+<%= f.submit %>
+<% end %>

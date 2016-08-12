@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/*-----------------nav bar begin----------------------*/
+.navbar {
+  background : rgba(255, 204, 153, 0.8);
+  margin-top: -20px;
+}
+
+.navbar ul li{
+  list-style: none;
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+.sign{
+  float: right;
+}
+.navbar ul li:hover{
+  background: rgba(180, 133, 88, 0.7);
+}
+
+/*-----------------nav bar end----------------------*/
+body {
+  background-image: url('https://github.com/pamelaolney/uppercut/blob/master/uppercut/maldives_sky_clouds_island_palm_trees_bungalows_sea_ocean_100389_3840x2400.jpg?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0
+}
+
+.background{
+  background: rgba(255, 255, 255, .87);
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+  /*top: 30%;
+  bottom: 0;
+  position: absolute;*/
+  margin: 0 50px 0 50px;
+  padding: 20px;
+}
+
+.background a{
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.welcomebox {
+  width: 400px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 0;
+  opacity: .8;
+}
+
+.welcomebox h6 a{
+  color: black;
+  font-size: 28px;
+}
+
+h6{
+  text-align: center;
+}
+
+.welcomebox:hover{
+  background: rgba(150, 221, 145, 0.5);
+}
+
+
+img {
+  height: 350px;
+  width: auoto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*----------------flash begin --------------------------*/
+
+.alert{
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.notice{
+  background: rgba(0, 0, 255, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/*----------------flash end --------------------------*/
+
+
+
+
+/*----------------form begin --------------------------*/
+
+#newuserform .userform input{
+  display: block;
+  width: 200px;
+}
+
+
+/*----------------form end --------------------------*/

@@ -1,0 +1,2 @@
+module ShortGoalsHelper
+end

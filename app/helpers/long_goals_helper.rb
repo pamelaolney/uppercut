@@ -1,0 +1,2 @@
+module LongGoalsHelper
+end

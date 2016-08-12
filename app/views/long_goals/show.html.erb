@@ -1,0 +1,11 @@
+
+<h2><%= @long_goal.goal %></h2>
+<p><%= @long_goal.duedate %></p>
+<p><%= image_tag @long_goal.image_url %></p>
+
+<p><%= link_to('(+) Add short term goal', new_long_goal_short_goal_path(@long_goal, @short_goal)) if @current_user %></p>
+<% @long_goal.short_goals.each do |short_goal| %>
+  <p><%= link_to short_goal.goal, long_goal_short_goal_path(@long_goal, short_goal) %> <%= link_to('(edit)', edit_long_goal_short_goal_path(@long_goal, short_goal)) if @current_user %></p>
+<% end %>
+
+<%= link_to ' ⬅ back', long_goals_path %>

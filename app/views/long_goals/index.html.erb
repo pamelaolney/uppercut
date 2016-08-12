@@ -1,0 +1,8 @@
+<%= link_to('(+) Create new long-term goal', new_long_goal_path(@long_goal)) if @current_user %>
+
+<ol>
+
+<% @long_goals.each do |long| %>
+  <li><%= link_to long.goal, long_goal_path(long) %> <%= link_to('(edit)', edit_long_goal_path(long)) if @current_user %> </li>
+<% end %>
+</ol>

@@ -1,0 +1,5 @@
+<%= render 'form' %>
+
+<%= link_to '(-) Remove Short-term Goal', long_goal_short_goal_path(@short_goal),
+    method: :delete,
+    data: {confirm: 'Are you sure that you would like to permanently remove this goal?'}%>

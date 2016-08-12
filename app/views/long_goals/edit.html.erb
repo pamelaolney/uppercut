@@ -1,0 +1,5 @@
+<%= render 'form' %>
+
+</p><%= link_to '(-) Remove Long-term Goal', long_goal_path(@long_goal),
+    method: :delete,
+    data: {confirm: "Once this is deleted, you must re-enter your goal if you would ever like to bring it back.  Continue?"} %></p>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uppercut</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <div class='navbar'>
+        <ul>
+          <li><strong><%= link_to 'UPPERCUT 👊', main_index_path %></strong></li>
+          <% if @current_user %>
+            <strong>
+              <%= link_to "Hey there, #{@current_user.username}!  😆", user_path(@current_user) %>
+            </strong>
+            <li class='sign'><strong><%= link_to 'SIGN OUT', session_path, method: :delete %></strong></li>
+          <% else %>
+            <li class='sign'><strong><%= link_to 'SIGN IN', new_session_path %> </strong></a></li>
+            <li class='sign'><strong><%= link_to 'SIGN UP', new_user_path %></strong></li>
+          <% end %>
+          <li class='sign'><strong><%= link_to 'LONG-TERM GOALS', long_goals_path %></strong></li>
+        </ul>
+      </div>
+    </header>
+    <br>
+    <% flash.each do |type, message| %>
+      <p class='<%= type %>'><%= message %></p>
+    <% end %>
+    <br>
+
+    <div class='background'>
+      <%= yield %>
+    </div>
+  </body>
+</html>

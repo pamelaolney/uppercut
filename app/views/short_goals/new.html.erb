@@ -1,0 +1,14 @@
+<h2>Short term goal to achieve the goal to <%= @long_goal.goal.downcase %>. </h2>
+
+<%= form_for [@long_goal, @short_goal] do |f| %>
+  <%= f.label :goal %>
+  <%= f.text_field :goal %>
+
+  <%= f.label :scheduled_date %>
+  <%= f.date_field :scheduled_date %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+<%= f.submit %>
+<% end %>
