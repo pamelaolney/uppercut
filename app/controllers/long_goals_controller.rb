@@ -1,5 +1,6 @@
 class LongGoalsController < ApplicationController
 
+# nice error handling here! sign em up! watch indentation tho
   def index
     if @current_user
     @long_goals = LongGoal.where(user_id: @current_user.id)
@@ -14,6 +15,7 @@ class LongGoalsController < ApplicationController
 
   def new
     redirect_to root_path unless @current_user
+    # nice and concise
     @long_goal = LongGoal.new
   end
 

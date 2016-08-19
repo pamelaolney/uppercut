@@ -16,8 +16,9 @@ class SessionsController < ApplicationController
           redirect_to new_session_path
         end
       else
-        flash[:alert] = "That user doesn't exists!"
+        flash[:alert] = "That user doesn't exist!"
       end
+      # nice use and communicative use of flashes! good UX here
   end
 
   def destroy
@@ -26,5 +27,5 @@ class SessionsController < ApplicationController
     redirect_to :root
   end
 
-
+# awesome way to handle logins!
 end

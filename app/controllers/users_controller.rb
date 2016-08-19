@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+#careful with indentation! not a huge deal makes a difference in readability
   def create
     @user = User.new(user_params)
     if @user.save
@@ -46,6 +47,7 @@ class UsersController < ApplicationController
 
   def logged_in_user
     unless logged_in?
+      #  this errored out for me; maybe unless @current_user would work better?
       flash[:alert] = "Please log in."
       render :new
     end
