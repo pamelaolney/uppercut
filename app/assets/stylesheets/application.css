@@ -46,7 +46,7 @@
 
 /*-----------------nav bar end----------------------*/
 body {
-  background-image: url('https://github.com/pamelaolney/uppercut/blob/master/uppercut/maldives_sky_clouds_island_palm_trees_bungalows_sea_ocean_100389_3840x2400.jpg?raw=true');
+  background: url('island.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
