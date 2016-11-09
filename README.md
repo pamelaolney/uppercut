@@ -1,3 +1,4 @@
-# Flashcards
+# Uppercut
 
-A web application using HTML/ CSS, JavaScript and jQuery.
+A full stack Ruby Rails Application utilizing RESTful routes that includes full CRUD
+functionality.
