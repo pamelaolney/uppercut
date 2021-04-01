@@ -1,6 +1,7 @@
 <h2>Short term goal to achieve the goal to <%= @long_goal.goal.downcase %>. </h2>
-
+<!-- Nice use of downcase: I like the language here, feels natural: nice UX -->
 <%= form_for [@long_goal, @short_goal] do |f| %>
+<!-- looks good! I like that this form is merging the params; see comment in controller also -->
   <%= f.label :goal %>
   <%= f.text_field :goal %>
 

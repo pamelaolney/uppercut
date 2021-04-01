@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 20160809001011) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+
+# overall I'm super impressed the complexity of your app, and your command and knowledge of your models and your controllers, the way you handled your migrations!
   create_table "long_goals", force: :cascade do |t|
     t.string   "goal"
     t.string   "duedate"

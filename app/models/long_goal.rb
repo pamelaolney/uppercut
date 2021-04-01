@@ -3,4 +3,5 @@ class LongGoal < ApplicationRecord
   belongs_to :user
 
   validates :goal, presence: true
+  # yay validations!
 end
