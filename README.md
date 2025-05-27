@@ -27,4 +27,4 @@ Puma starting in single mode...
 * Listening on tcp://localhost:3000
 ```
 
-![Uppercut App Demo Image](https://raw.githubusercontent.com/pamelaolney/makali/df592590b8fb97155011a1a39ea29133cc4c9236/app/assets/images/readme_demo.jpg)
+![Uppercut App Demo Image](https://raw.githubusercontent.com/pamelaolney/uppercut/refs/heads/main/app/assets/images/readme_demo.jpg)
