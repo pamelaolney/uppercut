@@ -45,14 +45,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-
-# gem 'psych', '< 4'
-
-# gem 'mimemagic'
-
-# gem 'nokogiri', '1.8.1'
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data'
 
